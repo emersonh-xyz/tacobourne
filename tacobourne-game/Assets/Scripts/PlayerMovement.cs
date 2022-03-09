@@ -17,9 +17,19 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        var movement = Input.GetAxis("Horizontal"); // Returns 1 or -1 for A & D keys
 
+        /*
+         * Horizontal movement controller
+         * Returns 1 or -1 depending on if A or D is pressed
+        */
+
+        var movement = Input.GetAxis("Horizontal"); 
         transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * movementSpeed;
+
+        /*
+         * Vetical movement controller
+         * If jump key pressed and y position is 0 add force to rigidbody
+        */
 
         if (Input.GetButtonDown("Jump") && Mathf.Abs(rb.velocity.y) < 0.001f) 
         {
