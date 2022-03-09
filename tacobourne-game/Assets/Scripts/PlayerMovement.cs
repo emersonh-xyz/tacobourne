@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
 
         /*
          * Horizontal movement controller
-         * Returns 1 or -1 depending on if A or D is pressed
+         * Returns 1 or -1 depending on if A or D is presseds
         */
 
         var movement = Input.GetAxis("Horizontal"); 
