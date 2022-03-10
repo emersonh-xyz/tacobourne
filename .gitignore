@@ -74,3 +74,4 @@ crashlytics-build.properties
 tacobourne-game/Packages/manifest.json
 tacobourne-game/Packages/packages-lock.json
 tacobourne-game/ProjectSettings/ProjectVersion.txt
+.DS_Store
