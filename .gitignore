@@ -71,3 +71,6 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
+tacobourne-game/Packages/manifest.json
+tacobourne-game/Packages/packages-lock.json
+tacobourne-game/ProjectSettings/ProjectVersion.txt
