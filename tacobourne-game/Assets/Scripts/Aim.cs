@@ -5,28 +5,29 @@ using UnityEngine;
 public class Aim : MonoBehaviour
 {
 
-    [SerializeField]
-    public Transform _arm;
-    float _offset = 90;
+    public GameObject player;
 
-    Vector3 _startingSize;
-    Vector3 _armStartingSize;
-
-    // Start is called before the first frame update
-    void Start()
+    private void FixedUpdate()
     {
-        _startingSize = transform.localScale;
-        _armStartingSize = _arm.localScale;
-    }
+        Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
 
-    // Update is called once per frame
-    void Update()
-    {
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector3 perpendicular = _arm.position - mousePos;
-        Quaternion val = Quaternion.LookRotation(Vector3.forward, perpendicular);
-        val *= Quaternion.Euler(0, 0, _offset);
+        difference.Normalize();
 
-        _arm.rotation = val;
-    }
+        float rotationZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
+
+        transform.rotation = Quaternion.Euler(0f, 0f, rotationZ);
+
+        if (rotationZ < 90 || rotationZ > 90) // If arm is on the other side of the body
+        {
+            if (player.transform.eulerAngles.y <= 0)// If player is facing to the right
+            {
+                
+                transform.localRotation = Quaternion.Euler(180, 0, -rotationZ); // Flip the arm on the x axis
+
+            } else if (player.transform.eulerAngles.y >= 180) // if player is facing to the left
+            {
+                transform.localRotation = Quaternion.Euler(180, 180, -rotationZ); 
+            }
+        }
+     }
 }
