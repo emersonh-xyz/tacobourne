@@ -6,9 +6,12 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D body;
     private Animator anim;
-    private bool grounded;
 
-    float someScale;
+
+    private bool grounded;
+    private bool facingRight;
+
+    float playerScale;
 
     private void Awake()
     {
@@ -17,9 +20,11 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    private void Start()
+    private void Flip()
     {
-        someScale = -transform.localScale.x;
+        facingRight = !facingRight;
+
+        transform.Rotate(0, 180f, 0f);
     }
 
     private void Update()
@@ -29,10 +34,10 @@ public class PlayerMovement : MonoBehaviour
         transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * speed;
 
         //Flip player when facing left/right.
-        if (movement > 0.01f)
-            transform.localScale = new Vector2(someScale, transform.localScale.y);
-        else if (movement < -0.01f)
-            transform.localScale = new Vector2(-someScale, transform.localScale.y);
+        if (movement > 0.01f && !facingRight)
+            Flip();
+        else if (movement < -0.01f && facingRight)
+            Flip();
 
         if (Input.GetKey(KeyCode.Space) && grounded)
             Jump();
