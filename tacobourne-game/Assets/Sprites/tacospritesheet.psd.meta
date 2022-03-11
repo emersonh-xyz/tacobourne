@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -118,8 +118,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ece68596c7f2f4f4381e817f2926dfab
-      internalID: 177324831
+      spriteID: 930b1a5e12b634ec2bc8dfdb0bdbab18
+      internalID: 1150452414
       vertices: []
       indices: 
       edges: []
@@ -139,8 +139,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63d77d06f8a5143adae3a533bfdc3750
-      internalID: -1728197909
+      spriteID: 9df0390db2b0646eca9f1b0016ef5358
+      internalID: -1902626989
       vertices: []
       indices: 
       edges: []
@@ -160,14 +160,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25a5273ef877747b383f4494517ba9f3
-      internalID: 489319151
+      spriteID: 7c2d84df26567434fa1199413aa7dd81
+      internalID: -347054943
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: tacospritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 288
+        width: 197
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a02faa3e00da74e02805892cfa62cb01
+      internalID: -520431465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tacospritesheet_4
       rect:
         serializedVersion: 2
         x: 533
@@ -181,29 +202,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7eb5c851c4b6b46aeb2763aa42d46a1a
-      internalID: -741502187
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tacospritesheet_4
-      rect:
-        serializedVersion: 2
-        x: 764
-        y: 264
-        width: 143
-        height: 125
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e6e3c51ec9494e93a600d58d14bebaa
-      internalID: -1391541551
+      spriteID: 1cb8a9c8ba7784b338c98e6d1e506e85
+      internalID: 453469992
       vertices: []
       indices: 
       edges: []
@@ -216,15 +216,15 @@ TextureImporter:
         y: 147
         width: 55
         height: 231
-      alignment: 9
-      pivot: {x: 0.77166194, y: 0.9676931}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ed25bfeaae0f4faca0b9d9c40baf6f8
-      internalID: 370935077
+      spriteID: 040484dd615204cd9ae7c4d2508065b2
+      internalID: -458735602
       vertices: []
       indices: 
       edges: []
@@ -237,15 +237,15 @@ TextureImporter:
         y: 147
         width: 55
         height: 231
-      alignment: 9
-      pivot: {x: 0.77166194, y: 0.97266865}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2aadd21b87f984f7290290157c631a3a
-      internalID: 586764527
+      spriteID: 981362e9e61444213b46d9d4a4966864
+      internalID: 1269025078
       vertices: []
       indices: 
       edges: []
@@ -254,19 +254,19 @@ TextureImporter:
       name: tacospritesheet_7
       rect:
         serializedVersion: 2
-        x: 764
-        y: 147
-        width: 154
-        height: 23
-      alignment: 9
-      pivot: {x: 1.1567609, y: 0.45003077}
+        x: 739
+        y: 93
+        width: 23
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f869dcdee5ac4d1b9d2cf5cda353a76
-      internalID: -36164888
+      spriteID: 7b430231dcd6542d5aae802d345c21fc
+      internalID: -2115324884
       vertices: []
       indices: 
       edges: []
@@ -275,10 +275,31 @@ TextureImporter:
       name: tacospritesheet_8
       rect:
         serializedVersion: 2
-        x: 525
-        y: 325
-        width: 143
-        height: 102
+        x: 739
+        y: 51
+        width: 154
+        height: 23
+      alignment: 9
+      pivot: {x: 0.99277884, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c6e54c6b96d426fb970c72ae265499
+      internalID: -2139579000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tacospritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 336
+        width: 178
+        height: 94
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,8 +307,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ff56b95a8d974c26a7705023aaf06d4
-      internalID: 1069398630
+      spriteID: 7b96e8a52c38e4c238d75183bb3558fe
+      internalID: 1841965125
       vertices: []
       indices: 
       edges: []
@@ -303,15 +324,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      tacospritesheet_2: 489319151
-      tacospritesheet_5: 370935077
-      tacospritesheet_6: 586764527
-      tacospritesheet_1: -1728197909
-      tacospritesheet_3: -741502187
-      tacospritesheet_7: -36164888
-      tacospritesheet_0: 177324831
-      tacospritesheet_4: -1391541551
-      tacospritesheet_8: 1069398630
+      tacospritesheet_2: -347054943
+      tacospritesheet_5: -458735602
+      tacospritesheet_6: 1269025078
+      tacospritesheet_1: -1902626989
+      tacospritesheet_3: -520431465
+      tacospritesheet_7: -2115324884
+      tacospritesheet_0: 1150452414
+      tacospritesheet_4: 453469992
+      tacospritesheet_8: -2139579000
+      tacospritesheet_9: 1841965125
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 1

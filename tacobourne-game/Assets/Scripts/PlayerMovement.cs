@@ -11,8 +11,6 @@ public class PlayerMovement : MonoBehaviour
     private bool grounded;
     private bool facingRight;
 
-    float playerScale;
-
     private void Awake()
     {
         //Grabs references for rigidbody and animator from game object.

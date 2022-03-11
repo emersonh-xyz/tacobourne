@@ -24,7 +24,11 @@ public class Bullet : MonoBehaviour
         Debug.Log(hitInfo.name);
         Destroy(gameObject);
 
-        Instantiate(impactEffect, transform.position, transform.rotation);
+        var explosion = Instantiate(impactEffect, transform.position, transform.rotation);
+
+        Destroy(explosion, .5f);
+
+       
 
         // Get all entities with EnemyAI script attached
         EnemyAI enemy = hitInfo.GetComponent<EnemyAI>();
